@@ -15,12 +15,12 @@ Another weird moment was when I tested if the enemy can disable the player. I tr
 ## **Personal changes**
 
 #### **Level expansion**
-Changed the background to a solid color, imported two asset bundles and used them to add textures and/or change assets of the ball, collectables and enemies. ALso used some props to exapnd and enhance the level a bit.
+I Changed the background to a solid color, and also imported two asset bundles. Some assets were used to exapnd (4 times bigger than the orgonal roll-a-ball level) and enhance the level a bit. I used one of the assets to change the enemie's mesh into this ring-like shape, and made it rotate along a local axis so that it looks like it is rolling. I also used some imported assets to make the walls/obstacles of the level (the modular construction kit asset), and used some textures from the other asset to give the collectable, the enemies and the player a new look. 
 level from the top:
 ![RollaBallGif](../Images%20and%20GIFs/RollaBallLevel.png)
 
 #### **Difficulty tweak**
-I wanted to make the game at least somewhat challenging, so I added two more enemies and made them a bit faster, and after each collectible was collected - to decrease the speed of the player by 1. There are 9 collectables, and the initial player speed is 15, so when the player needs to collect the last collectable, their speed is 4, which does make the game a bit harder.
+I wanted to make the game at least somewhat challenging, so I added two more enemies and made them a bit faster (speed set to 3), and after each collectible was collected - to decrease the speed of the player by 1. There are 9 collectables, and the initial player speed is 15, so when the player needs to collect the last collectable, their speed is 4, which does make the game a bit harder.
 
 #### **Restart Button**
 I saw how annoying it to keep restarting the game to replay the level, so I added a button that appears when win/lose condition is met, and activates this line: `SceneManager.LoadScene("MiniGame");`.
