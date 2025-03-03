@@ -6,7 +6,7 @@ As I was not familiar with the Unity's new input system, when coding the movemen
 But after reading about it, I learned that it is called whenever the player (the object the script is attached to) moves.
 I also learned a bit more about NavMeshes, NavMesh agents and especialy how the NavMesh obstacle works, as I have not used those before in previous projects.
 
-### other observations
+### Other observations
 There were a few weird moments that I had while following the tutorial, one of them were the scaling of the "Ground" and the static obstacles, as in the tutorial it says to set the X and Z scale of the ground to 2, and then to make the static obstacles the children of the ground object. This makes the child objects "inherit" the scale of the parent object, so when making a ramp it had weird scaling.
 To combat this I just set an empty game object as a parent and made the ground and static obstacles the child objects.
 
@@ -15,7 +15,7 @@ Another weird moment was when I tested if the enemy can disable the player. I tr
 ## **Personal changes**
 
 #### **Level expansion**
-I Changed the background to a solid color, and also imported two asset bundles. Some assets were used to exapnd (4 times bigger than the orgonal roll-a-ball level) and enhance the level a bit. I used one of the assets to change the enemie's mesh into this ring-like shape, and made it rotate along a local axis so that it looks like it is rolling. I also used some imported assets to make the walls/obstacles of the level (the modular construction kit asset), and used some textures from the other asset to give the collectable, the enemies and the player a new look. 
+I Changed the background to a solid color, and also imported two asset bundles. Some assets were used to expand (4 times bigger than the original roll-a-ball level) and enhance the level a bit. I used one of the assets to change the enemie's mesh into this ring-like shape, and made it rotate along a local axis so that it looks like it is rolling. I also used some imported assets to make the walls/obstacles of the level (the modular construction kit asset), and used some textures from the other asset to give the collectable, the enemies and the player a new look. 
 
 The level from the top looks like this:
 ![RollaBallGif](../Images%20and%20GIFs/RollaBallLevel.png)
