@@ -46,12 +46,12 @@ Or B:
 
 
 ## The Milestones
-**1st. The game will have a main menu, featuring at least working start and exit buttons.
-It should be possible to enter the game and walk around, which would also have at least the assets for the level, the player and the shop.**
+1st. The game will have a main menu, featuring at least working start and exit buttons.
+It should be possible to enter the game and walk around, which would also have at least the assets for the level, the player and the shop.
 
-**2nd. The game will feature at least 5 simple yet different enemies, as well as boss(es).
+2nd. The game will feature at least 5 simple yet different enemies, as well as boss(es).
 The player will be able to use a single (starter) weapon, and all enemies will be able to drop gold when killed, but they will also be able to kill the player. 
 
-**3rd. The player will be able to choose one of the characters at the start of the run. They will also be able to collect gold and use the shop to get other weapons `and upgrades`.
-The game will feature at least 10 weapons with different abilities.**
+3rd. The player will be able to choose one of the characters at the start of the run. They will also be able to collect gold and use the shop to get other weapons `and upgrades`.
+The game will feature at least 10 weapons with different abilities.
 The game will also have the game over screen, `as well as a highscore` or `a game ending when the player beats the final boss`.
