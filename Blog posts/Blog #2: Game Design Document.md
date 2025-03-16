@@ -12,9 +12,11 @@ A Top-Down 2D Rouge-Like game, where a player will go trough waves of enemies or
 4. After all enemies are defeated, a shop opens in the level.
 5. In the shop, gold can be spent to get upgrades for the player/weapon.
 *This is a point where I have yet to decide which way the game should go, as both side A and side B have their own pros and cons*
+
 A:
 6.`After the purchases are made, the player chooses to go through one of the doors, which decide the difficulty of the next level (harder level - more gold)`.
 7.`After a certain number of levels, the player will reach a final boss, that if beaten, the player beats/finishes the game`.
+
 Or B:
 6.`After a certain amount of preparation/shopping time, a new wave will begin that is harder than the one before`.
 7.`The game is endless, and the main goal is to survive as long as possible (survive as many waves of enemies as possible, and try to beat the previous highscore)`.
