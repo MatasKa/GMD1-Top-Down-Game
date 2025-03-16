@@ -3,7 +3,7 @@
 This is the Game Design Document for my GMD1 course game. So far, this is not the final version, and the decisions that are still not finalized will be marked like `this`.
 
 ## **The Main Concept/Idea:**
-A Top-Down 2D Rouge-Like game, where a player will go trough waves of enemies or levels to earn gold, and purchase upgrades for their kit.
+`*Insert a game title here*` is a Top-Down 2D Rouge-Like game, where a player will go trough waves of enemies or levels to earn gold, and purchase upgrades for their kit.
 
 ## **The Current Gameplay Loop:**
 1. A player enters a level.
@@ -28,7 +28,7 @@ Or B:
 - Each enemy will feature a unique design, different HP amounts and different attacks/attack patterns.
 
 ### Player
-- Before the run begins, the player will be able to choose a character, each one having different stats/quirks/ablities.
+- Before the run begins, the player will be able to choose one of the `potentially 3` characters, each one having different stats/quirks/ablities.
 - If the player dies, the game is over.
 - `The player will be able to take some damage before dying`.
 - `The player will not be able to heal himself`.
@@ -43,3 +43,15 @@ Or B:
 - The game will be 2D
 - The game will have a top-down perspective
 - `The game will use pixel-art`
+
+
+## The Milestones
+**1st. The game will have a main menu, featuring at least working start and exit buttons.
+It should be possible to enter the game and walk around, which would also have at least the assets for the level, the player and the shop.**
+
+**2nd. The game will feature at least 5 simple yet different enemies, as well as boss(es).
+The player will be able to use a single (starter) weapon, and all enemies will be able to drop gold when killed, but they will also be able to kill the player. 
+
+**3rd. The player will be able to choose one of the characters at the start of the run. They will also be able to collect gold and use the shop to get other weapons `and upgrades`.
+The game will feature at least 10 weapons with different abilities.**
+The game will also have the game over screen, `as well as a highscore` or `a game ending when the player beats the final boss`.
