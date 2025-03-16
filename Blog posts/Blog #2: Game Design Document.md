@@ -38,3 +38,8 @@ Or B:
 - Each weapon will also feature a unique design, different damage stats and different attacks or abilities.
 - There will be at least 10 different weapons.
 - The shop will have some choice of weapons `and upgrades` for the player.
+
+### Style/Art
+- The game will be 2D
+- The game will have a top-down perspective
+- `The game will use pixel-art`
