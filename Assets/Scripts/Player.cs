@@ -8,14 +8,15 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    private Vector2 movementInput;
     private Vector2 movement;
     private float speed = 3;
     public Animator animator;
-    private Vector2 moveInput;
     private Vector2 lastMoveDir;
 
-    void Update()
+    void FixedUpdate()
     {
+        movement = movementInput * speed * Time.fixedDeltaTime;
         transform.Translate(movement);
 
         if (movement != Vector2.zero)
@@ -26,11 +27,10 @@ public class Player : MonoBehaviour
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
         animator.SetBool("IsMoving", movement != Vector2.zero);
-
     }
 
     public void OnMovement(InputValue value)
     {
-        movement = value.Get<Vector2>() * Time.deltaTime * speed;
+        movementInput = value.Get<Vector2>();
     }
 }
