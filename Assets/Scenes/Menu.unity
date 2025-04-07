@@ -176,9 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Rougebit
-
-'
+  m_text: Roguebit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b25769029496e0743b52c49fdabe6f3e, type: 2}
   m_sharedMaterial: {fileID: -2114704115766058863, guid: b25769029496e0743b52c49fdabe6f3e, type: 2}
@@ -9365,9 +9363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Rougebit
-
-'
+  m_text: Roguebit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b25769029496e0743b52c49fdabe6f3e, type: 2}
   m_sharedMaterial: {fileID: -2114704115766058863, guid: b25769029496e0743b52c49fdabe6f3e, type: 2}
@@ -12218,7 +12214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1532887794042317281, guid: 57a3e7932636c3348948f5e904b1fb46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
