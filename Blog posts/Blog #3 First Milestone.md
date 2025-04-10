@@ -11,20 +11,36 @@
 - A shop in the "Arena", which the player can access, but not use as of yet.
 
 ## In-depth look
+
+### Main menu
+While I did use Unity before, I haven't done a single game/project that required a controller input. At first I was thinking on how would the script look if I wanted to be able to use the joystick to navigate the menu, but when I took a look at some retro main menus as inspiration, I decided on probably the easiest implementation that also fits the retro theme quite well - a "press A to start" main menu.
+I was not sure of this, as I thought that I will still need the navigation system when implementing a shop or a character select screen, but I decided to tackle those implementations in a similar way of pressing the
+corresponding ABXY button. The menu is in a sepparate scene from the game itself, and the script simply takes the input of "A" and "B" buttons and either loads the player into the next scene, or quits the game. 
+
+*insert main menu image*
+
 ### "Arena"
-The "Arena" (and the main menu background) were created using the tilemap system and the imported assets. The colliders are only on the "river" and "edge of the land" tiles.
+The "Arena" (and the main menu background) were created using the tilemap system and the imported assets. At first, everything that had water also had a collider, but because the map's boundaries is made from full water tiles, the tilemap collider looked cramped with a lot of useless colliders. That is why I chose to fo the colliders only on the "river" and "edge of the land" tiles.
 While the player should not be able to walk on a full water tile, there will always be the "edge" tile that limits the player to stay on land.
-The "Arena" uses a composite collider with merge selected, so there is this big collider along the edge of the island.
+The "Arena" uses a composite collider with merge selected, so there is this one big collider along the edge of the island and a few for the rivers.
+
+*insert collider image*
 
 ### Walking animations
 While the spritesheets were imported, the animation logic was not. As the game has a top-down perspective, the character has 4 idle animations, and 4 walking animations - 1 for each way they are looking at.
-The attacking is planned to be implemented in a different way, so for now, this is how the animator window looks like:
+The attacking and death is planned to be implemented in a different way, but I am not 100% sure if that will be the case. So for now, this is how the animator window looks like:
 
 *insert animator window*
 
-The player can try to move the character anytime, anywhere, so the animation to walk in the chosen direction will interupt any other animation, except itself (so that the animation loops, but not too fast).
+**Why like this?**
 The idle animation can only be played if a player moved in that direction, so only the connection from the same side walking animation is necessary.
+The player can try to move the character anytime, anywhere, so the animation to walk in the chosen direction will interupt any other animation, except itself (so that the animation loops, but not too fast),
+this is also why "any state" was used instead of making four transitions for every idle animation and some more for walking.
 The animations are played by checking only two values: MoveX and MoveY, which are values of the movement (joystick of the controller) that are being inputed by the player.
+Also, for the game to feel more responsive, none of the transisions have any "exit time", but the transitions to idle have a very tiny "transition duration".
+*the orange tint is there as a personal reminder that I am in play mode, as to not make any changes*
+
+*insert animator gif*
 
 ### Shop screen
 *The first milestone seemed a bit underwhelming after I compared it to the plans of the other two, so I decided to add a shop screen to this one.*
@@ -36,6 +52,3 @@ The player is still able to move while in the shop (as it is a canvas object), s
 You can also close the shop by pressing "B" again.
 
 *insert a gif of going to the shop screen*
-
-Gallery:
-*insert a few gifs*
