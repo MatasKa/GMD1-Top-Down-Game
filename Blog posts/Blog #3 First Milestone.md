@@ -18,6 +18,7 @@ I was not sure of this, as I thought that I will still need the navigation syste
 corresponding ABXY button. The menu is in a sepparate scene from the game itself, and the script simply takes the input of "A" and "B" buttons and either loads the player into the next scene, or quits the game. 
 
 *insert main menu image*
+![MainMenuGif](../Images%20and%20GIFs/MainMenu.gif)
 
 ### "Arena"
 The "Arena" (and the main menu background) were created using the tilemap system and the imported assets. At first, everything that had water also had a collider, but because the map's boundaries is made from full water tiles, the tilemap collider looked cramped with a lot of useless colliders. That is why I chose to fo the colliders only on the "river" and "edge of the land" tiles.
@@ -25,12 +26,15 @@ While the player should not be able to walk on a full water tile, there will alw
 The "Arena" uses a composite collider with merge selected, so there is this one big collider along the edge of the island and a few for the rivers.
 
 *insert collider image*
+![Arena](../Images%20and%20GIFs/Arena.png)
+![ArenaColliders](../Images%20and%20GIFs/Arena%20Colliders.png)
 
 ### Walking animations
 While the spritesheets were imported, the animation logic was not. As the game has a top-down perspective, the character has 4 idle animations, and 4 walking animations - 1 for each way they are looking at.
 The attacking and death is planned to be implemented in a different way, but I am not 100% sure if that will be the case. So for now, this is how the animator window looks like:
 
 *insert animator window*
+![Animator](../Images%20and%20GIFs/Animator%20Image.png)
 
 **Why like this?**
 The idle animation can only be played if a player moved in that direction, so only the connection from the same side walking animation is necessary.
@@ -41,6 +45,7 @@ Also, for the game to feel more responsive, none of the transisions have any "ex
 *the orange tint is there as a personal reminder that I am in play mode, as to not make any changes*
 
 *insert animator gif*
+![AnimatorGIF](../Images%20and%20GIFs/Animator.gif)
 
 ### Shop screen
 *The first milestone seemed a bit underwhelming after I compared it to the plans of the other two, so I decided to add a shop screen to this one.*
@@ -51,4 +56,4 @@ Instead of selecting an item with a joystick, I chose to do a simpler solution a
 The player is still able to move while in the shop (as it is a canvas object), script will close the shop if the player exits the buy-zone, the same zone that will show the prompt to open the shop when entered.
 You can also close the shop by pressing "B" again.
 
-*insert a gif of going to the shop screen*
+![Animator](../Images%20and%20GIFs/Showcase.gif)
