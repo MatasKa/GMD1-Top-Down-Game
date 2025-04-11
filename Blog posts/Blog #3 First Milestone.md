@@ -17,7 +17,6 @@ While I did use Unity before, I haven't done a single game/project that required
 I was not sure of this, as I thought that I will still need the navigation system when implementing a shop or a character select screen, but I decided to tackle those implementations in a similar way of pressing the
 corresponding ABXY button. The menu is in a sepparate scene from the game itself, and the script simply takes the input of "A" and "B" buttons and either loads the player into the next scene, or quits the game. 
 
-*insert main menu image*
 ![MainMenuGif](../Images%20and%20GIFs/MainMenu.gif)
 
 ### "Arena"
@@ -25,7 +24,6 @@ The "Arena" (and the main menu background) were created using the tilemap system
 While the player should not be able to walk on a full water tile, there will always be the "edge" tile that limits the player to stay on land.
 The "Arena" uses a composite collider with merge selected, so there is this one big collider along the edge of the island and a few for the rivers.
 
-*insert collider image*
 ![Arena](../Images%20and%20GIFs/Arena.png)
 ![ArenaColliders](../Images%20and%20GIFs/Arena%20Colliders.png)
 
@@ -33,7 +31,6 @@ The "Arena" uses a composite collider with merge selected, so there is this one 
 While the spritesheets were imported, the animation logic was not. As the game has a top-down perspective, the character has 4 idle animations, and 4 walking animations - 1 for each way they are looking at.
 The attacking and death is planned to be implemented in a different way, but I am not 100% sure if that will be the case. So for now, this is how the animator window looks like:
 
-*insert animator window*
 ![Animator](../Images%20and%20GIFs/Animator%20Image.png)
 
 **Why like this?**
@@ -42,9 +39,9 @@ The player can try to move the character anytime, anywhere, so the animation to 
 this is also why "any state" was used instead of making four transitions for every idle animation and some more for walking.
 The animations are played by checking only two values: MoveX and MoveY, which are values of the movement (joystick of the controller) that are being inputed by the player.
 Also, for the game to feel more responsive, none of the transisions have any "exit time", but the transitions to idle have a very tiny "transition duration".
+
 *the orange tint is there as a personal reminder that I am in play mode, as to not make any changes*
 
-*insert animator gif*
 ![AnimatorGIF](../Images%20and%20GIFs/Animator.gif)
 
 ### Shop screen
