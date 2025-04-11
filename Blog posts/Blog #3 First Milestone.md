@@ -53,4 +53,5 @@ Instead of selecting an item with a joystick, I chose to do a simpler solution a
 The player is still able to move while in the shop (as it is a canvas object), script will close the shop if the player exits the buy-zone, the same zone that will show the prompt to open the shop when entered.
 You can also close the shop by pressing "B" again.
 
+*The colors are a bit off because of the way I capture my screen, they look different than what is seen here.*
 ![Animator](../Images%20and%20GIFs/Showcase.gif)
