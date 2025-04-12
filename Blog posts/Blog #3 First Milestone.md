@@ -1,4 +1,4 @@
-#**The first milestone**
+# **The first milestone**
 
 ### What was made/implemented
 - The assets for the tileset/level (https://gfragger.itch.io/magic-market)
