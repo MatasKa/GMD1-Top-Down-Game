@@ -49,7 +49,6 @@ Also, for the game to feel more responsive, none of the transisions have any "ex
 The shop has a 'B' button prompt that appears when a player is near enough (inside a "is-trigger" collider) and is in Time-out phase (in between waves).
 If the prompt appears, the player should be able to open the shop screen with 'B', as opening of the shop logic is also done with the same checks.
 The shop screen has only placeholder assets, as it was planned to be an adition of the third milestone, but the main idea is there.
-Instead of selecting an item with a joystick, I chose to do a simpler solution and let the item be bought by pressing one of the ABXY buttons, with a prompt for what item which button would buy.
 The player is still able to move while in the shop (as it is a canvas object), script will close the shop if the player exits the buy-zone, the same zone that will show the prompt to open the shop when entered.
 You can also close the shop by pressing "B" again.
 
