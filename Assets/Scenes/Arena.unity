@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 153366137}
   - component: {fileID: 153366139}
   m_Layer: 0
-  m_Name: Shop Button
+  m_Name: Shop Button Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,7 +460,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 8468203780080218790, guid: 063ae1429176a9b46b315ac4821a2d48, type: 3}
+  m_Sprite: {fileID: 6857464191659403754, guid: 2e25918dd7cf1764e9ce8b09a0d450d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
