@@ -39,14 +39,18 @@ Roguebit is a Top-Down 2D Rogue-Like game, where a player will go trough waves o
 - The game will use pixel-art assets
 
 ## The Milestones
-1st. The game will have a main menu, featuring a detailed backgorund and working start and exit buttons, but not the character select screen.
+***1st - The Set up***
+The game will have a main menu, featuring a detailed backgorund and working start and exit buttons, but not the character select screen.
 It will be possible to enter the "arena" (the level in which the game-loop is) and walk around. The "arena" will have the assets for the level, the shop and the animations for the player.
 The player will be able to enter the shop, but only to see the shop screen, not to buy items yet.
 
-2nd. The game should have all of the enemies implemented, as well as 1 `or 2` boss`(es)`. The game will have some sound effects `and some music` implemented as well.
-The player will be able to use a single (starter) weapon, and all enemies will be able to drop gold when killed, but they will also be able to kill the player. 
+***2nd - Enemies***
+The game should have all of the enemies implemented, as well as 1 `or 2` boss`(es)`. The game will have some sound effects `and some music` implemented as well.
+This milestone should have all of the enemy functionality working, including: spawning in the level, going after the player, attaking them. Because the player will be attacked,
+this milestone will also include player HP and them dying, with a deathscreen.
 
-3rd. The player will be able to choose one of the characters at the start of the run. They will also be able to collect gold and use the shop to get other weapons `and upgrades`.
-The game will feature at least 10 weapons.
-The game will also have the game over screen, as well as a game ending when the player beats the final boss`.
-This milestone also includes any polishing depending of how much time is left.
+***3rd - Weapons and Upgrades***
+This milestone focuses on the player having tools and choices to beat the enemy, which include:
+The player being able to choose one of the characters at the start of the run, player killing the enemies and collecting gold, as well as buying other weapons `and upgrades` in the shop.
+The game will feature at least 10 weapons, and it will also have a game ending screen when the player beats the last wave.
+Some polishing will also be included depending of how much time is left.
