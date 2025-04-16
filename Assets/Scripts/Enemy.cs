@@ -2,32 +2,30 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxHP = 3;
-    private int currentHP;
+    public int gold = 1;
+    public int damage = 1;
+
+    private GoldManager goldManager;
+    private Health health;
+    private GameObject player;
+    private Health playerHealth;
+
 
     void Start()
     {
-        currentHP = maxHP;
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.gameObject.GetComponent<Health>();
+        goldManager = player.gameObject.GetComponent<GoldManager>();
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHP = currentHP - damage;
+    //goldManager.AddGold(gold);
 
-        if (currentHP <= 0)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            Die();
+            playerHealth.TakeDamage(damage);
         }
-    }
-
-    void Die()
-    {
-        // IMPLEMENT gold and sound
-        Destroy(gameObject);
-    }
-
-    void OnTriggerEnter2D(Collider2D player)
-    {
         // IMPLEMENT dmg
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private Vector2 movementInput;
     private Vector2 movement;
