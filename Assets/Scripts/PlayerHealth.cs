@@ -11,4 +11,9 @@ public class PlayerHealth : Health
         }
         base.Die();
     }
+
+    public int GetHealth()
+    {
+        return base.currentHP;
+    }
 }

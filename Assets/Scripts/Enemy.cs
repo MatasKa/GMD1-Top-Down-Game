@@ -4,28 +4,32 @@ public class Enemy : MonoBehaviour
 {
     public int gold = 1;
     public int damage = 1;
-
-    private GoldManager goldManager;
-    private Health health;
+    public float speed = 1f;
     private GameObject player;
-    private Health playerHealth;
+    private Rigidbody2D rb;
+
+    private PlayerHealth playerHealth;
 
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.gameObject.GetComponent<Health>();
-        goldManager = player.gameObject.GetComponent<GoldManager>();
+        playerHealth = player.gameObject.GetComponent<PlayerHealth>();
     }
 
-    //goldManager.AddGold(gold);
+    void FixedUpdate()
+    {
+        Vector2 direction = (player.transform.position - transform.position).normalized;
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+    }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(damage);
+            Debug.Log("player Health: " + playerHealth.GetHealth());
         }
-        // IMPLEMENT dmg
     }
 }
