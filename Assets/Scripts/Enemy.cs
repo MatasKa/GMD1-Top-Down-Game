@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(damage);
+            playerHealth.UpdateHealthBar();
             Debug.Log("player Health: " + playerHealth.GetHealth());
         }
     }
