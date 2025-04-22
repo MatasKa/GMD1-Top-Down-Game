@@ -30,7 +30,6 @@ public class Enemy : MonoBehaviour
         {
             playerHealth.TakeDamage(damage);
             playerHealth.UpdateHealthBar();
-            Debug.Log("player Health: " + playerHealth.GetHealth());
         }
     }
 }
