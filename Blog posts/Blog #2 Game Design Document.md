@@ -46,7 +46,7 @@ The player will be able to enter the shop, but only to see the shop screen, not 
 
 ***2nd - Enemies***
 The game should have all of the enemies implemented, as well as 1 `or 2` boss`(es)`. The game will have some sound effects `and some music` implemented as well.
-This milestone should have all of the enemy functionality working, including: spawning in the level, going after the player, attaking them. Because the player will be attacked,
+This milestone should have all of the enemy functionality working (except waves). This includes: enemies spawning in the level, going after the player, attaking them. Because the player will be attacked,
 this milestone will also include player HP and them dying and a deathscreen.
 
 ***3rd - Weapons and Upgrades***
