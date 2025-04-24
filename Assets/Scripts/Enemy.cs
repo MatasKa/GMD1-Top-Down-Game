@@ -24,9 +24,9 @@ public class Enemy : MonoBehaviour
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 
-    void OnCollisionStay2D(Collision2D other)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(damage);
             playerHealth.UpdateHealthBar();

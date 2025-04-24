@@ -19,7 +19,7 @@ public class EnemySpawnManager : MonoBehaviour
     void SpawnEnemy()
     {
         Debug.Log("SpawnEnemy Function start");
-        int EnemyNumber = Random.Range(0, 3);
+        int EnemyNumber = Random.Range(0, 5);
         Debug.Log("Random range: " + EnemyNumber);
         for (int i = 0; i < SpawnPoints.Length; i++)
         {
@@ -31,12 +31,15 @@ public class EnemySpawnManager : MonoBehaviour
                 EnabledSpawnIndex.Add(i);
             }
         }
-        int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
-        GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
+        if (EnabledSpawnIndex.Count != 0)
+        {
+            int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
+            GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
 
-        Debug.Log("Spawning at: " + chosenSpawnPoint.name);
+            Debug.Log("Spawning at: " + chosenSpawnPoint.name);
 
-        Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+            Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+        }
         EnabledSpawnIndex.Clear();
     }
 }

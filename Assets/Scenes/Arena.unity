@@ -4788,7 +4788,9 @@ MonoBehaviour:
   - {fileID: 161795836249014993, guid: 5a1587cc5c36572479d1fc9b0ca0e91e, type: 3}
   - {fileID: 5148661396462863011, guid: eac28907b91cc174eaf3ea9f4c2b3a45, type: 3}
   - {fileID: 3831460607755281897, guid: e18010ea2f37415419ca4ccc091a28e4, type: 3}
-  spawnInterval: 5
+  - {fileID: 4893366568824771865, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+  - {fileID: 6993731559771554287, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+  spawnInterval: 1
 --- !u!1 &1780927192
 GameObject:
   m_ObjectHideFlags: 0
@@ -17388,6 +17390,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e18010ea2f37415419ca4ccc091a28e4, type: 3}
+--- !u!1001 &3319782889766215850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4893366568824771865, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_Name
+      value: EyeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338860904643692861, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
+--- !u!1001 &3454238427965667360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367282208978595692, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993731559771554287, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
+      propertyPath: m_Name
+      value: FlowerEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -17400,6 +17516,8 @@ SceneRoots:
   - {fileID: 608266582}
   - {fileID: 601188243}
   - {fileID: 3238477617103252469}
+  - {fileID: 3319782889766215850}
+  - {fileID: 3454238427965667360}
   - {fileID: 2499608270222468675}
   - {fileID: 1821023093207050307}
   - {fileID: 1772870411}
