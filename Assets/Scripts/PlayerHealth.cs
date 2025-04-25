@@ -1,3 +1,4 @@
+using System.Collections;
 using JetBrains.Annotations;
 using TMPro;
 using Unity.VisualScripting;
@@ -10,6 +11,11 @@ public class PlayerHealth : Health
 
     private UnityEngine.UI.Slider healthBar;
     private TextMeshProUGUI HealthText;
+
+    [SerializeField] private float invincibilityDuration = 1f;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    private bool Invincible = false;
+
 
     void Start()
     {
@@ -37,4 +43,24 @@ public class PlayerHealth : Health
         HealthText.text = currentHP.ToString() + " / " + maxHP.ToString();
         healthBar.value = (float)currentHP / (float)maxHP;
     }
+
+    public override void TakeDamage(int damage)
+    {
+        if (Invincible == false)
+        {
+            StartCoroutine(Invincibility());
+            base.TakeDamage(damage);
+        }
+    }
+
+    private IEnumerator Invincibility()
+    {
+        Debug.Log("Invincible starts");
+        Invincible = true;
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(invincibilityDuration);
+        spriteRenderer.color = Color.white;
+        Invincible = false;
+    }
+
 }

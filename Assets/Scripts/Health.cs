@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
         currentHP = maxHP;
     }
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         currentHP = currentHP - damage;
         if (currentHP <= 0)

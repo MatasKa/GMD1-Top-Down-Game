@@ -13,19 +13,19 @@ public class EnemySpawnManager : MonoBehaviour
     {
         SpawnPoints = GameObject.FindGameObjectsWithTag("EnemySpawn");
         InvokeRepeating("SpawnEnemy", 5f, spawnInterval);
-        Debug.Log("Spawn Script Started");
+        //Debug.Log("Spawn Script Started");
     }
 
     void SpawnEnemy()
     {
-        Debug.Log("SpawnEnemy Function start");
+        //Debug.Log("SpawnEnemy Function start");
         int EnemyNumber = Random.Range(0, 5);
-        Debug.Log("Random range: " + EnemyNumber);
+        //Debug.Log("Random range: " + EnemyNumber);
         for (int i = 0; i < SpawnPoints.Length; i++)
         {
-            Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
+            //Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
             IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
-            Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
+            //Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
             if (IsSpawnDisabled[i] == false)
             {
                 EnabledSpawnIndex.Add(i);
@@ -36,7 +36,7 @@ public class EnemySpawnManager : MonoBehaviour
             int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
             GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
 
-            Debug.Log("Spawning at: " + chosenSpawnPoint.name);
+            //Debug.Log("Spawning at: " + chosenSpawnPoint.name);
 
             Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
         }

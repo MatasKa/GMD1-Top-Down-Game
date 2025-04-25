@@ -4005,6 +4005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 10
+  invincibilityDuration: 1
+  spriteRenderer: {fileID: 1281504899}
 --- !u!1 &1291198506
 GameObject:
   m_ObjectHideFlags: 0
