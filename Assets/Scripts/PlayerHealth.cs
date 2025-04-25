@@ -12,12 +12,15 @@ public class PlayerHealth : Health
     private UnityEngine.UI.Slider healthBar;
     private TextMeshProUGUI HealthText;
     [SerializeField] private float invincibilityDuration = 1f;
+    private AudioSource audioSource;
+
 
     private bool Invincible = false;
 
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         healthBar = GameObject.Find("HealthBar").GetComponent<UnityEngine.UI.Slider>();
         HealthText = GameObject.Find("HPText").GetComponent<TextMeshProUGUI>();
         UpdateHealthBar();
@@ -47,6 +50,7 @@ public class PlayerHealth : Health
     {
         if (Invincible == false)
         {
+            audioSource.Play();
             StartCoroutine(Invincibility());
             StartCoroutine(damageFlash.Damaged(spriteRenderer, 3));
             base.TakeDamage(damage);
