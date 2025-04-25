@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ShootBullets : MonoBehaviour
@@ -6,11 +7,13 @@ public class ShootBullets : MonoBehaviour
     public float shootInterval = 0.5f;
     void Start()
     {
-        InvokeRepeating("ShootBullet", 0.5f, shootInterval);
+        StartCoroutine("ShootBullet");
     }
 
-    void ShootBullet()
+    private IEnumerator ShootBullet()
     {
         Instantiate(BulletPrefab, transform.position + transform.up * 0.2f, transform.rotation);
+        yield return new WaitForSeconds(shootInterval);
+        StartCoroutine("ShootBullet");
     }
 }
