@@ -3,6 +3,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] protected int maxHP;
+    [SerializeField] protected DamageFlash damageFlash;
+    [SerializeField] protected SpriteRenderer spriteRenderer;
+
     protected int currentHP;
 
     void Awake()
@@ -13,6 +16,7 @@ public class Health : MonoBehaviour
     public virtual void TakeDamage(int damage)
     {
         currentHP = currentHP - damage;
+        StartCoroutine(damageFlash.Damaged(spriteRenderer, 1));
         if (currentHP <= 0)
         {
             Die();

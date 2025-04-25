@@ -11,9 +11,8 @@ public class PlayerHealth : Health
 
     private UnityEngine.UI.Slider healthBar;
     private TextMeshProUGUI HealthText;
-
     [SerializeField] private float invincibilityDuration = 1f;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private bool Invincible = false;
 
 
@@ -49,6 +48,7 @@ public class PlayerHealth : Health
         if (Invincible == false)
         {
             StartCoroutine(Invincibility());
+            StartCoroutine(damageFlash.Damaged(spriteRenderer, 3));
             base.TakeDamage(damage);
         }
     }
@@ -56,19 +56,7 @@ public class PlayerHealth : Health
     private IEnumerator Invincibility()
     {
         Invincible = true;
-        spriteRenderer.color = Color.red;
-
-        for (int i = 0; i < 3; i++)
-        {
-            yield return new WaitForSeconds(invincibilityDuration / 7);
-            spriteRenderer.color = Color.white;
-            yield return new WaitForSeconds(invincibilityDuration / 7);
-            spriteRenderer.color = Color.red;
-        }
-
-        yield return new WaitForSeconds(invincibilityDuration / 7);
-        spriteRenderer.color = Color.white;
-
+        yield return new WaitForSeconds(invincibilityDuration);
         Invincible = false;
     }
 
