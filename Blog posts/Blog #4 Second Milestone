@@ -1,0 +1,55 @@
+# **The second milestone**
+
+### What was made/implemented
+all of the enemies and a boss were fully implemented and have a prefab (except the wave system) (all sprites are also made by me)
+This includes:
+- 5 common enemies (with animations)
+- A boss enemy (stationary turret with four guns)
+- Enemy spawning
+- Enemy going after the player
+- Enemy shooting at / damaging the player
+- Player HP (with a working healthbar, but no death)
+- "Shoot" and "Player hurt" sound effects (generated with https://sfxr.me)
+
+There were a few more additions and scripts that were implemented, but not tested as of yet: gold counter, enemy HP and them dying, getting gold from enemies.
+In this milestone there were also quite a lot of script sepparating, more details below.
+
+## In-depth look at the common enemies
+
+![Enemies](../Images%20and%20GIFs/Enemies.png)
+
+as mentioned there are 5 common enemies now. Here is the descriptions (numbering not based on the image above)
+
+1st: Slime - the only enemy that can move towards the player but is not floating. This means it is probably the weakest enemy,as the player can easily walk to another island using a bridge,
+and the slime only follows the player in a straight line, so will probably get itself stuck on a ledge, unless there is only the bridge sepparating them.
+
+2nd: Bee - lowest HP enemy, but is floating, does decent amount of damage and is quite fast, so it will catch up to the player no matter where they are.
+
+3rd: Eye - same as bee, but more HP. Both this and the bee have a simple "FacePlayer" script that makes them always face the player.
+
+4th: "Sphere" - floating, has most HP out of the common enemies, and does most damage. This is the only enemy that was not made with Terraria enemies as an inspiration.
+
+5th: Flower - Average HP and damage, but is the only common enemy that is stationary, yet is able to shoot. Also has the "FacePlayer" script, so that it aims at the player while shooting.
+
+## Boss
+
+![BossGIF](../Images%20and%20GIFs/Boss.gif)
+
+damage all 4 legs, if all of them are destroyed, victory.
+2 states - aim and spin.
+turret manager script
+Shoot script
+
+## Health and damage (to player) / or "other script section"?
+
+![PlayerDamagedGIF](../Images%20and%20GIFs/PlayerDamaged.gif)
+
+there is a parent "Health" script
+it is inherited by "EnemyHealth" and "PlayerHealth"
+DamagedFlash script
+Player script was separated to PlayerMovement and Health (PlayerHealth) scripts, while also getting GoldManager script.
+
+## Sound
+Went to site, generated audio, added "audio source", modified two scripts a bit.
+
+![EnemyChaseGIF](../Images%20and%20GIFs/EnemyChase.gif)
