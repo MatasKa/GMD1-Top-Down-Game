@@ -48,6 +48,7 @@ after the lecture about game architecture, I tried to play around a bit by separ
 I made the `Health` script which is responsible for keeping track of how much health someone has. 
 
 **Health.cs**
+
 `
 public class Health : MonoBehaviour
 {
@@ -78,6 +79,7 @@ public class Health : MonoBehaviour
     }
 }
 `
+
 *during the development of this milestone, one of the things I learned is that `virtual` means it can be overriden by other classes that inherit this one :D*
 
 As the enemies and the player should have some different logic with how their health works, but the main idea matches, the `Health` script is inherited by `PlayerHealth` and `EnemyHealth`.
