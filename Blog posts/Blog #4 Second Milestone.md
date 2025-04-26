@@ -39,8 +39,10 @@ Spin state - will start spinning and shooting with all 4 guns at the same time  
 To defeat it, the player will need to destroy all 4 of its legs, and the game is won.
 
 ![BossGIF](../Images%20and%20GIFs/Boss.gif)
+
 *The boss changing states*
-## **scripts**
+
+## **Scripts**
 
 after the lecture about game architecture, I tried to play around a bit by separating the scripts, as I had a habit of writting quite huge files rather than multiple small ones.
 I made the `Health` script which is responsible for keeping track of how much health someone has. 
