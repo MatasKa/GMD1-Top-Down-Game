@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 150404fa697882640a20e3b7f9dbd08f
+guid: 4487aedb8d906294ab231ba2d10f350d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3956765242612242330
-    second: SphereEnemy_0
-  - first:
-      213: 1886317659378451281
-    second: SphereEnemy_1
-  - first:
-      213: -4735277248596709449
-    second: SphereEnemy_2
-  - first:
-      213: 54682098413194911
-    second: SphereEnemy_3
-  - first:
-      213: -6349910533460254773
-    second: SphereEnemy_4
+      213: -3338749442709606003
+    second: Coin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SphereEnemy_0
+      name: Coin_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 13
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6682c76c9feb619c0800000000000000
-      internalID: -3956765242612242330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SphereEnemy_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1538cc4caeb8d2a10800000000000000
-      internalID: 1886317659378451281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SphereEnemy_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7bf67645e6ae84eb0800000000000000
-      internalID: -4735277248596709449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SphereEnemy_3
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9ecd7b241542c000800000000000000
-      internalID: 54682098413194911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SphereEnemy_4
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bcf1799530690e7a0800000000000000
-      internalID: -6349910533460254773
+      spriteID: d81b24142116aa1d0800000000000000
+      internalID: -3338749442709606003
       vertices: []
       indices: 
       edges: []
@@ -251,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 95190830dda27ec47b2914b3486648cd
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SphereEnemy_0: -3956765242612242330
-      SphereEnemy_1: 1886317659378451281
-      SphereEnemy_2: -4735277248596709449
-      SphereEnemy_3: 54682098413194911
-      SphereEnemy_4: -6349910533460254773
+      Coin_0: -3338749442709606003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
