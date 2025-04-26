@@ -93,7 +93,7 @@ As the enemies and the player should have some different logic with how their he
 ## **Spawning enemies**
 
 Last thing I wanted to mention is how spawning enemies work. There are 9 predetermined positions for enemies to spawn, each one has `EnemySpawn.cs` (has a bool that says if there is a collider with a tag "AntiSpawn" touhing it).
-The "AntiSpawn" tag is on a huge trigger collider on the player, so that enemies don't spawn near. The flower enemy, becouse is stationary, also blocks a spawn.
+The "AntiSpawn" tag is on a huge trigger collider on the player, so that enemies don't spawn near. The flower enemy, because is stationary, has a small one.
 The main logic is in `EnemySpawnManager.cs`, where each spawn is taken, and is checked by the bool value if enemy can be spawned there. After that, a spawn is randomly selected from the ones that can, and a random common enemy is spawned (might change later).
 
 ![EnemyChaseGIF](../Images%20and%20GIFs/EnemyChase.gif)
