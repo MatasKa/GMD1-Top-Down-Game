@@ -29,8 +29,6 @@ and the slime only follows the player in a straight line, so will probably get i
 
 ## **Boss**
 
-![BossGIF](../Images%20and%20GIFs/Boss.gif)
-
 The plan so far is that the boss will spawn at the last wave, and other enemies will not be spawning duringd the boss fight.
 During the fight, the boss will be stationary, but it has four guns that make it a bit more of a bullet-hell type fight.
 
@@ -40,8 +38,8 @@ Spin state - will start spinning and shooting with all 4 guns at the same time  
 
 To defeat it, the player will need to destroy all 4 of its legs, and the game is won.
 
-![PlayerDamagedGIF](../Images%20and%20GIFs/PlayerDamaged.gif)
-
+![BossGIF](../Images%20and%20GIFs/Boss.gif)
+*The boss changing states*
 ## **scripts**
 
 after the lecture about game architecture, I tried to play around a bit by separating the scripts, as I had a habit of writting quite huge files rather than multiple small ones.
