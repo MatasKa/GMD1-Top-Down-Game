@@ -49,7 +49,7 @@ I made the `Health` script which is responsible for keeping track of how much he
 
 **Health.cs**
 
-`
+```csharp
 public class Health : MonoBehaviour
 {
     [SerializeField] protected int maxHP;
@@ -78,7 +78,7 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 }
-`
+```
 
 *during the development of this milestone, one of the things I learned is that `virtual` means it can be overriden by other classes that inherit this one :D*
 
