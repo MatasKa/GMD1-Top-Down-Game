@@ -20,12 +20,12 @@ In this milestone there were also quite a lot of script sepparating, more detail
 
 as mentioned there are 5 common enemies now. Here is the descriptions (numbering not based on the image above)
 
-1st: **Slime** - the only enemy that can move towards the player but is not floating. This means it is probably the weakest enemy,as the player can easily walk to another island using a bridge,
+1. **Slime** - the only enemy that can move towards the player but is not floating. This means it is probably the weakest enemy,as the player can easily walk to another island using a bridge,
 and the slime only follows the player in a straight line, so will probably get itself stuck on a ledge, unless there is only the bridge sepparating them.
-2nd: **Bee** - lowest HP enemy, but is floating, does decent amount of damage and is quite fast, so it will catch up to the player no matter where they are.
-3rd: **Eye** - same as bee, but more HP. Both this and the bee have a simple `FacePlayer` script that makes them always face the player.
-4th: **"Sphere"** - floating, has most HP out of the common enemies, and does most damage. This is the only enemy that was not made with Terraria enemies as an inspiration.
-5th: **Flower** - Average HP and damage, but is the only common enemy that is stationary, yet is able to shoot. Also has the `FacePlayer` script, so that it aims at the player while shooting.
+2. **Bee** - lowest HP enemy, but is floating, does decent amount of damage and is quite fast, so it will catch up to the player no matter where they are.
+3. **Eye** - same as bee, but more HP. Both this and the bee have a simple `FacePlayer` script that makes them always face the player.
+4. **"Sphere"** - floating, has most HP out of the common enemies, and does most damage. This is the only enemy that was not made with Terraria enemies as an inspiration.
+5. **Flower** - Average HP and damage, but is the only common enemy that is stationary, yet is able to shoot. Also has the `FacePlayer` script, so that it aims at the player while shooting.
 
 ## **Boss**
 
