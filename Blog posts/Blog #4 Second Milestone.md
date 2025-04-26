@@ -82,9 +82,9 @@ public class Health : MonoBehaviour
 
 *during the development of this milestone, one of the things I learned is that `virtual` means it can be overriden by other classes that inherit this one :D*
 
-As the enemies and the player should have some different logic with how their health works, but the main idea matches, the `Health` script is inherited by `PlayerHealth` and `EnemyHealth`.
-`EnemyHealth` only overrides the `Die()`, so that it also calls a `GoldManager` script and adds gold for the player.
-`PlayerHealth` not only overrides the `TakeDamage()` and `Die()`, but also has its own additions, and a few extra functions - a `IEnumerator Invincibility()` (makes player invincible for a bit after taking damage) and `UpdateHealthBar()`.
+As the enemies and the player should have some different logic with how their health works, but the main idea matches, the `Health.cs` script is inherited by `PlayerHealth.cs` and `EnemyHealth.cs`.
+`EnemyHealth.cs` only overrides the `Die()`, so that it also calls a `GoldManager.cs` script and adds gold for the player.
+`PlayerHealth.cs` not only overrides the `TakeDamage()` and `Die()`, but also has its own additions, and a few extra functions - a `IEnumerator Invincibility()` (makes player invincible for a bit after taking damage) and `UpdateHealthBar()`.
 
 **some other scripts**
 `DamagedFlash.cs` - takes the spriteRenderer component and changes it color to "flash" the object. It is called by the health scripts.
