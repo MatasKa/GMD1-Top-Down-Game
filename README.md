@@ -9,4 +9,4 @@ Blog Posts:
 
 [Blog #3: First Milestone](Blog%20posts/Blog%20%233%20First%20Milestone.md)
 
-[Blog #4: Second Milestone](Blog%20posts/Blog%20%233%20Second%20Milestone.md)
+[Blog #4: Second Milestone](Blog%20posts/Blog%20%234%20Second%20Milestone.md)
