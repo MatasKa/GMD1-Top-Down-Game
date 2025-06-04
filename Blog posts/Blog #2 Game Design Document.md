@@ -12,7 +12,7 @@ Roguebit is a Top-Down 2D Rogue-Like game, where a player will go trough waves o
 4. After a certain ammount of time the wave ends and a shop opens in the level.
 5. In the shop, gold can be spent to get upgrades for the player/weapon.
 6. After a certain amount of preparation/shopping time `and/or when the player is ready`, a new wave will begin that is harder than the one before.
-7.The game is ends after every wave was beaten.
+7. The game is ends after every wave was beaten.
 
 ## **Other Details**
 ### Enemies
