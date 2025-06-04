@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: edae53af0037e374dbd6ab1dd38bd2cb
+guid: 5725c920cb559f8498672e27f49f9d52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3903555499691412176
-    second: ShooterFlowerV1_0
-  - first:
-      213: -365636092974338641
-    second: ShooterFlowerV1_1
-  - first:
-      213: 735340155823147742
-    second: ShooterFlowerV1_2
-  - first:
-      213: 3693670537568942512
-    second: ShooterFlowerV1_3
+      213: -4083600808516813205
+    second: spr_wep_iron_axe_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -81,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -135,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShooterFlowerV1_0
+      name: spr_wep_iron_axe_0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 28
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,74 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0da01288b073c2630800000000000000
-      internalID: 3903555499691412176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterFlowerV1_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fade33129effceaf0800000000000000
-      internalID: -365636092974338641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterFlowerV1_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eda4be8c9f3743a00800000000000000
-      internalID: 735340155823147742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShooterFlowerV1_3
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b97f15b8cd824330800000000000000
-      internalID: 3693670537568942512
+      spriteID: b6e7bd353b22457c0800000000000000
+      internalID: -4083600808516813205
       vertices: []
       indices: 
       edges: []
@@ -226,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 022778e45a6d7c240a364bfcbbb1bde4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ShooterFlowerV1_0: 3903555499691412176
-      ShooterFlowerV1_1: -365636092974338641
-      ShooterFlowerV1_2: 735340155823147742
-      ShooterFlowerV1_3: 3693670537568942512
+      spr_wep_iron_axe_0_0: -4083600808516813205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
