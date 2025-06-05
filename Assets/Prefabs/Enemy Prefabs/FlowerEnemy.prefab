@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377e19ee716d63e49a8d30facc9bce7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 3
+  gold: 8
   damage: 1
   speed: 0
 --- !u!114 &765307905373844335
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7dbb703b7d2b3f499f54c5e10982d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 6
   damageFlash: {fileID: 6251656339878693329}
   spriteRenderer: {fileID: 2725311135297278961}
 --- !u!50 &2845345047364541456

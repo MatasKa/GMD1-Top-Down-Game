@@ -3,8 +3,13 @@ using UnityEngine;
 
 public class GoldManager : MonoBehaviour
 {
-    public TextMeshProUGUI GoldText;
+    private TextMeshProUGUI GoldText;
     private int gold = 0;
+
+    void Start()
+    {
+        GoldText = GameObject.Find("Gold Text").GetComponent<TextMeshProUGUI>();
+    }
 
     public void AddGold(int i)
     {

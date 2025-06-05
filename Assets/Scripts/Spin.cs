@@ -8,4 +8,9 @@ public class Spin : MonoBehaviour
     {
         transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
     }
+
+    public void setSpeed(float speed)
+    {
+        rotationSpeed = -speed;
+    }
 }

@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
-        animator.SetBool("IsMoving", movement != Vector2.zero);
+        //animator.SetBool("IsMoving", movement != Vector2.zero);
     }
 
     public void OnMovement(InputValue value)

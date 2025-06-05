@@ -3,7 +3,7 @@ using UnityEngine;
 public class FacePlayer : MonoBehaviour
 {
     private Transform player;
-    [SerializeField] private float rotationSpeed = 1f;
+    [SerializeField] private float rotationSpeed = 5f;
 
     void Start()
     {
