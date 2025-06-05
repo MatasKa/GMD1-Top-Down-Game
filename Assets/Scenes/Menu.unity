@@ -10816,11 +10816,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Strength      1
+  m_text: 'Strength      2
 
-    Dexterity     2
+    Dexterity     5
 
-    Finesse        0
+    Finesse        1
 
     Walk speed  
     15'
@@ -11543,11 +11543,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Strength      0
+  m_text: 'Strength      1
 
-    Dexterity     1
+    Dexterity     2
 
-    Finesse        2
+    Finesse        5
 
     Walk speed  
     10'
@@ -13522,11 +13522,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Strength      2
+  m_text: 'Strength      5
 
-    Dexterity     0
+    Dexterity     1
 
-    Finesse        1
+    Finesse        2
 
     Walk speed  
     5'

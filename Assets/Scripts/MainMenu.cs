@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
     {
         if (onCharSelect)
         {
-            charChoice.SetCharStats(2, 0, 1, 5, 0);
+            charChoice.character = 0;
             SceneManager.LoadScene("Arena");
         }
         else
@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
     {
         if (onCharSelect)
         {
-            charChoice.SetCharStats(1, 2, 0, 15, 1);
+            charChoice.character = 1;
             SceneManager.LoadScene("Arena");
         }
     }
@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
     {
         if (onCharSelect)
         {
-            charChoice.SetCharStats(0, 1, 2, 10, 2);
+            charChoice.character = 2;
             SceneManager.LoadScene("Arena");
         }
     }

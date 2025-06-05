@@ -8,7 +8,7 @@ public class Shop : MonoBehaviour
     private bool TimeOut = true;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (TimeOut == true)
+        if (TimeOut == true && other.gameObject.tag == "Player")
         {
             InBuyZone = true;
             prompt.SetActive(true);
@@ -16,9 +16,12 @@ public class Shop : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        InBuyZone = false;
-        prompt.SetActive(false);
-        shopScreen.SetActive(false);
+        if (other.gameObject.tag == "Player")
+        {
+            InBuyZone = false;
+            prompt.SetActive(false);
+            shopScreen.SetActive(false);
+        }
     }
 
     public void OnB()

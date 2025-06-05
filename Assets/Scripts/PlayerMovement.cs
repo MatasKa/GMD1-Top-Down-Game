@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 movementInput;
     private Vector2 movement;
-    private float speed = 10;
+    public float speed = 10;
     public Animator animator;
     private Vector2 lastMoveDir;
     private Rigidbody2D rb;
@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     {
 
         movement = movementInput * speed * Time.fixedDeltaTime;
-        //transform.Translate(movement);
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 
         if (movement != Vector2.zero)
