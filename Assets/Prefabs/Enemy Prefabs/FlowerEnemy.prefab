@@ -429,6 +429,8 @@ MonoBehaviour:
   maxHP: 6
   damageFlash: {fileID: 6251656339878693329}
   spriteRenderer: {fileID: 2725311135297278961}
+  hitEffect: {fileID: 1210545811477728714, guid: 0b23902365436b545abda41852124530, type: 3}
+  killEffect: {fileID: 7878145203560024652, guid: bee0529e71de3ee4e8ff970297ac2633, type: 3}
 --- !u!50 &2845345047364541456
 Rigidbody2D:
   serializedVersion: 5

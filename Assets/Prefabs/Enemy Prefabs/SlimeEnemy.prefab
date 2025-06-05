@@ -131,6 +131,8 @@ MonoBehaviour:
   maxHP: 3
   damageFlash: {fileID: 1933691854129733334}
   spriteRenderer: {fileID: 6503355299172668132}
+  hitEffect: {fileID: 1210545811477728714, guid: 0b23902365436b545abda41852124530, type: 3}
+  killEffect: {fileID: 7878145203560024652, guid: bee0529e71de3ee4e8ff970297ac2633, type: 3}
 --- !u!114 &1933691854129733334
 MonoBehaviour:
   m_ObjectHideFlags: 0
