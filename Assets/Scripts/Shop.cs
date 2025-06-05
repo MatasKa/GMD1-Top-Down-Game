@@ -1,16 +1,17 @@
+using System;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
     public GameObject prompt;
     public GameObject shopScreen;
-    private bool InBuyZone = false;
-    private bool TimeOut = true;
+    private bool inBuyZone = false;
+    private bool timeOut = true;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (TimeOut == true && other.gameObject.tag == "Player")
+        if (timeOut == true && other.gameObject.tag == "Player")
         {
-            InBuyZone = true;
+            inBuyZone = true;
             prompt.SetActive(true);
         }
     }
@@ -18,7 +19,7 @@ public class Shop : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            InBuyZone = false;
+            inBuyZone = false;
             prompt.SetActive(false);
             shopScreen.SetActive(false);
         }
@@ -26,7 +27,7 @@ public class Shop : MonoBehaviour
 
     public void OnB()
     {
-        if (shopScreen.activeSelf == false && InBuyZone == true)
+        if (shopScreen.activeSelf == false && inBuyZone == true)
         {
             shopScreen.SetActive(true);
         }
@@ -34,5 +35,10 @@ public class Shop : MonoBehaviour
         {
             shopScreen.SetActive(false);
         }
+    }
+
+    public void SetTimeOut(bool to)
+    {
+        timeOut = to;
     }
 }

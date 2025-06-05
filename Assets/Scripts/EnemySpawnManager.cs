@@ -9,6 +9,7 @@ public class EnemySpawnManager : MonoBehaviour
     private GameObject[] SpawnPoints;
     private bool[] IsSpawnDisabled = new bool[9];
     private List<int> EnabledSpawnIndex = new List<int>();
+    private bool timeOut = true;
     void Start()
     {
         SpawnPoints = GameObject.FindGameObjectsWithTag("EnemySpawn");
@@ -16,30 +17,37 @@ public class EnemySpawnManager : MonoBehaviour
         //Debug.Log("Spawn Script Started");
     }
 
+    public void setTimeOut(bool to)
+    {
+        timeOut = to;
+    }
     void SpawnEnemy()
     {
-        //Debug.Log("SpawnEnemy Function start");
-        int EnemyNumber = Random.Range(0, 5);
-        //Debug.Log("Random range: " + EnemyNumber);
-        for (int i = 0; i < SpawnPoints.Length; i++)
+        if (timeOut == false)
         {
-            //Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
-            IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
-            //Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
-            if (IsSpawnDisabled[i] == false)
+            //Debug.Log("SpawnEnemy Function start");
+            int EnemyNumber = Random.Range(0, 5);
+            //Debug.Log("Random range: " + EnemyNumber);
+            for (int i = 0; i < SpawnPoints.Length; i++)
             {
-                EnabledSpawnIndex.Add(i);
+                //Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
+                IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
+                //Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
+                if (IsSpawnDisabled[i] == false)
+                {
+                    EnabledSpawnIndex.Add(i);
+                }
             }
-        }
-        if (EnabledSpawnIndex.Count != 0)
-        {
-            int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
-            GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
+            if (EnabledSpawnIndex.Count != 0)
+            {
+                int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
+                GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
 
-            //Debug.Log("Spawning at: " + chosenSpawnPoint.name);
+                //Debug.Log("Spawning at: " + chosenSpawnPoint.name);
 
-            Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+                Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+            }
+            EnabledSpawnIndex.Clear();
         }
-        EnabledSpawnIndex.Clear();
     }
 }

@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7dbb703b7d2b3f499f54c5e10982d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 3
+  maxHP: 5
   damageFlash: {fileID: 1933691854129733334}
   spriteRenderer: {fileID: 6503355299172668132}
   hitEffect: {fileID: 1210545811477728714, guid: 0b23902365436b545abda41852124530, type: 3}
