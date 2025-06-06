@@ -7,7 +7,7 @@ public class WaveManager : MonoBehaviour
     public GameObject nextWavePrompt;
     public TextMeshProUGUI waveTimer;
     public TextMeshProUGUI waveCounter;
-    public Shop shop;
+    public ShopZone shop;
     public EnemySpawnManager enemySpawnManager;
     private float countdownTime = 45f;
     private int wave = 0;

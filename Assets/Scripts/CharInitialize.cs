@@ -6,7 +6,7 @@ public class CharInitialize : MonoBehaviour
     public GameObject wolfPrefab;
     public GameObject duelistPrefab;
 
-    void Start()
+    void Awake()
     {
         CharacterChoice characterChoice = FindFirstObjectByType<CharacterChoice>();
         if (characterChoice.character == 0)

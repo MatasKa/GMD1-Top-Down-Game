@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
         return strength;
     }
 
-    public float GetDexterity()
+    public int GetDexterity()
     {
         return dexterity;
     }
