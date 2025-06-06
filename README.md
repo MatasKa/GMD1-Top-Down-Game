@@ -11,6 +11,6 @@ Blog Posts:
 
 [Blog #4: Second Milestone](Blog%20posts/Blog%20%234%20Second%20Milestone.md)
 
-[Blog #5: Third Milestone](Blog%20posts/Blog%20%234%20Third%20Milestone.md)
+[Blog #5: Third Milestone](Blog%20posts/Blog%20%235%20Third%20Milestone.md)
 
-[Blog #6: The final product](Blog%20posts/Blog%20%234%20The%20final%20product.md)
+[Blog #6: The final product](Blog%20posts/Blog%20%236%20The%20final%20product.md)
