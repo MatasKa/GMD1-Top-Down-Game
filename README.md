@@ -1,7 +1,10 @@
-# GMD1 Top Down Game
+# GMD1 RogueBit
  a game for the GMD1 course
 
-Blog Posts:
+# Video:
+https://www.youtube.com/watch?v=rRmMAjzgTNk
+
+# Blog Posts:
 
 [Blog #1: Roll-a-ball](Blog%20posts/Blog%20%231%20Roll-a-ball.md)
 
@@ -14,3 +17,15 @@ Blog Posts:
 [Blog #5: Third Milestone](Blog%20posts/Blog%20%235%20Third%20Milestone.md)
 
 [Blog #6: The final product](Blog%20posts/Blog%20%236%20The%20final%20product.md)
+
+
+# Assets used
+
+***Potions:*** https://tuamigoeldelosrecursos.itch.io/potionspociones
+***Weapons:*** https://timberwolfgames.itch.io/freepixelsweapons
+***Tile set:*** https://gfragger.itch.io/magic-market
+***Characters:*** https://elvgames.itch.io/free-retro-game-world-sprites
+***Font:*** https://www.1001fonts.com/dpcomic-font.html
+***Sound effects generated at:*** https://sfxr.me
+
+***If you see an asset in the game that is not mentioned here, I probably made it myself***
