@@ -17,7 +17,7 @@ While there are a few other things I would like to change, or was planning to do
 From the first days of writing the GDD, the 3 classes are here, and can be chosen before the start of the run. While the gameplay is a bit different for each one, I decided to make the difficulty easier.
 This made sure that whatever class you choose, you should not have trouble of beating the game.
 
-![Enemies](../Images%20and%20GIFs/Enemies.png)
+![Classes](../Images%20and%20GIFs/Classes.png)
 
 Here is each class and what it aims for:
 1. **Warden** - The one that was used to play/test during the development of the previous milestones. It is the "tank" class of Roguebit.
@@ -35,7 +35,7 @@ When doing the weapons, I was thinking of how could I implement the swinging of 
 I was thinking of doing so that when pressing a button, the character would swing his weapon behind him, but that would have made it awkward for the stationary enemies. Which lead me to try this, a bit
 of a weirder idea that I got.
 
-![Enemies](../Images%20and%20GIFs/Enemies.png)
+![WeaponSpin](../Images%20and%20GIFs/WeaponSpin.gif)
 
 No buttons need to be pressed or held, just a sword/axe/something else that the character spins 24/7 around themselves. This does introduce some timing requirements, especially if the weapon is a slow one.
 The weapon never dissapears, you can buy other weapons, and they will change your current one, meaning you always have only one.
@@ -44,7 +44,7 @@ There are 12 weapons in total, four for each class, and one in each tier for tha
 for that class, but it is there to help you get your first gold (which is collected automaticly, as long as the enemy dies, the player is awarded). By progressing trough the waves, of which there are 10 
 in total, the player collects gold and can spend it in the shop to buy a weapon of a higher tier.
 
-![Enemies](../Images%20and%20GIFs/Enemies.png)
+![ClassesAndWeapons](../Images%20and%20GIFs/classes%20and%20weapons.png)
 
 
 ## **Shop**
@@ -56,7 +56,7 @@ A reroll works by pressing 'Y', the specified gold will be deducted, and two ran
 that is just how chance works. If a player buys an item, it will dissapear. Rerolling still work as expected and the shop then will make an item appear again. The reroll value does rise with each reroll
 in this "time-out" (time between the enemy waves).
 
-![BossGIF](../Images%20and%20GIFs/Boss.gif)
+![Shop](../Images%20and%20GIFs/NewShop.png)
 
 
 ## **Scripts**
