@@ -4810,7 +4810,8 @@ MonoBehaviour:
   - {fileID: 6993731559771554287, guid: ddebd485e6adcbd4dbb8627b11db751e, type: 3}
   - {fileID: 4893366568824771865, guid: 1ade7d6c63bd0db47a191d3e1518135b, type: 3}
   - {fileID: 3831460607755281897, guid: e18010ea2f37415419ca4ccc091a28e4, type: 3}
-  spawnInterval: 10
+  waveManager: {fileID: 1772870413}
+  spawnInterval: 3
 --- !u!114 &1772870413
 MonoBehaviour:
   m_ObjectHideFlags: 0

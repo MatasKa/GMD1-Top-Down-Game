@@ -28,6 +28,11 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+    public int GetWave()
+    {
+        return wave;
+    }
+
     private IEnumerator StartNextWave()
     {
         wave++;

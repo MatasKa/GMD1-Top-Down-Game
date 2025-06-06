@@ -4,7 +4,7 @@ using UnityEngine;
 public class GoldManager : MonoBehaviour
 {
     private TextMeshProUGUI GoldText;
-    private int gold = 999;
+    private int gold = 0;
 
     void Start()
     {

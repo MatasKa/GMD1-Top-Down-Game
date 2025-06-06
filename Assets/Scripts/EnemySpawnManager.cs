@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 public class EnemySpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
+    public WaveManager waveManager;
     public float spawnInterval = 5f;
     private GameObject[] SpawnPoints;
     private bool[] IsSpawnDisabled = new bool[9];
@@ -25,14 +26,20 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if (timeOut == false)
         {
-            //Debug.Log("SpawnEnemy Function start");
-            int EnemyNumber = Random.Range(0, 5);
-            //Debug.Log("Random range: " + EnemyNumber);
+            int maxRange;
+            if ((waveManager.GetWave() / 2) + 1 == 6)
+            {
+                maxRange = 5;
+            }
+            else
+            {
+                maxRange = (waveManager.GetWave() / 2) + 1;
+            }
+
+            int EnemyNumber = Random.Range(0, maxRange);
             for (int i = 0; i < SpawnPoints.Length; i++)
             {
-                //Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
                 IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
-                //Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
                 if (IsSpawnDisabled[i] == false)
                 {
                     EnabledSpawnIndex.Add(i);
@@ -42,8 +49,6 @@ public class EnemySpawnManager : MonoBehaviour
             {
                 int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
                 GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
-
-                //Debug.Log("Spawning at: " + chosenSpawnPoint.name);
 
                 Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
             }

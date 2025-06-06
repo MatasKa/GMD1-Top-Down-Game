@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906410f7137c47e4db9d421275c52403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
+  maxHP: 40
   damageFlash: {fileID: 7730501311595287378}
   spriteRenderer: {fileID: 3812031005680414415}
   invincibilityDuration: 1
