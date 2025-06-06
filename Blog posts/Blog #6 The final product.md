@@ -1,6 +1,6 @@
 **So, after all of the blogs, milestones and commits, this is how the game looks, works, and how it is played.**
 
-#***RogueBit***
+# ***RogueBit***
 
 ![MainMenuGif](../Images%20and%20GIFs/MainMenu.gif)
 
