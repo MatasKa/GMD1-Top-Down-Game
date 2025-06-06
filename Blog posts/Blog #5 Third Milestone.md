@@ -44,7 +44,7 @@ There are 12 weapons in total, four for each class, and one in each tier for tha
 for that class, but it is there to help you get your first gold (which is collected automaticly, as long as the enemy dies, the player is awarded). By progressing trough the waves, of which there are 10 
 in total, the player collects gold and can spend it in the shop to buy a weapon of a higher tier.
 
-![ClassesAndWeapons](../Images%20and%20GIFs/classes%20and%20weapons.png)
+![ClassesAndWeapons](../Images%20and%20GIFs/ClassesAndWeapons.png)
 
 
 ## **Shop**
