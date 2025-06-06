@@ -31,6 +31,7 @@ public class Shop : MonoBehaviour
     private int WeaponNumber;
     private int PotionNumber;
     private bool shopedThisPause = false;
+    private bool potionBought = false;
     void Start()
     {
         playerStats = GameObject.FindAnyObjectByType<PlayerStats>();
@@ -72,6 +73,7 @@ public class Shop : MonoBehaviour
             PotionNumber = UnityEngine.Random.Range(0, 4);
             GameObject newPotion = Instantiate(potionPrefabs[PotionNumber], shopCanvas.transform);
             CurrentPotion = newPotion;
+            potionBought = false;
         }
     }
 
@@ -97,7 +99,7 @@ public class Shop : MonoBehaviour
 
     public void OnA()
     {
-        if (shopZone.GetTimeOut() && goldManager.GetGold() >= int.Parse(weaponPriceText.text))
+        if (shopZone.shopScreen.activeSelf && goldManager.GetGold() >= int.Parse(weaponPriceText.text))
         {
             if (CurrentWeaponReq <= allPlayerStats[CurrentWeaponClass])
             {
@@ -110,6 +112,22 @@ public class Shop : MonoBehaviour
                 changedWeapon.transform.localRotation = Quaternion.identity;
                 Destroy(CurrentWeapon);
             }
+        }
+    }
+
+    public void OnX()
+    {
+        if (shopZone.shopScreen.activeSelf && goldManager.GetGold() >= 20 && potionBought == false)
+        {
+            goldManager.RemoveGold(20);
+            potionBought = true;
+
+            if (PotionNumber == 0) { playerHealth.Heal(); }
+            else if (PotionNumber == 1) { playerStats.AddStrength(1); }
+            else if (PotionNumber == 2) { playerStats.AddDexterity(1); }
+            else { playerStats.AddFinesse(1); }
+            Destroy(CurrentPotion);
+            LoadPlayerStats();
         }
     }
 

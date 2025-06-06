@@ -57,6 +57,12 @@ public class PlayerHealth : Health
         }
     }
 
+    public void Heal()
+    {
+        currentHP = maxHP;
+        UpdateHealthBar();
+    }
+
     private IEnumerator Invincibility()
     {
         Invincible = true;
