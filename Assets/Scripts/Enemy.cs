@@ -20,8 +20,11 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 direction = (player.transform.position - transform.position).normalized;
-        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+        if (rb != null)
+        {
+            Vector2 direction = (player.transform.position - transform.position).normalized;
+            rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)

@@ -5,10 +5,13 @@ using UnityEngine.Rendering;
 public class EnemySpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
+    public GameObject boss;
+    public WaveManager waveManager;
     public float spawnInterval = 5f;
     private GameObject[] SpawnPoints;
     private bool[] IsSpawnDisabled = new bool[9];
     private List<int> EnabledSpawnIndex = new List<int>();
+    private bool timeOut = true;
     void Start()
     {
         SpawnPoints = GameObject.FindGameObjectsWithTag("EnemySpawn");
@@ -16,30 +19,46 @@ public class EnemySpawnManager : MonoBehaviour
         //Debug.Log("Spawn Script Started");
     }
 
+    public void setTimeOut(bool to)
+    {
+        timeOut = to;
+    }
     void SpawnEnemy()
     {
-        //Debug.Log("SpawnEnemy Function start");
-        int EnemyNumber = Random.Range(0, 5);
-        //Debug.Log("Random range: " + EnemyNumber);
-        for (int i = 0; i < SpawnPoints.Length; i++)
+        if (timeOut == false)
         {
-            //Debug.Log("Spawn point " + i + " " + SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose());
-            IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
-            //Debug.Log("Spawn point " + i + " is " + IsSpawnDisabled[i]);
-            if (IsSpawnDisabled[i] == false)
+            int maxRange;
+            if ((waveManager.GetWave() / 2) + 1 == 6)
             {
-                EnabledSpawnIndex.Add(i);
+                maxRange = 5;
             }
-        }
-        if (EnabledSpawnIndex.Count != 0)
-        {
-            int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
-            GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
+            else
+            {
+                maxRange = (waveManager.GetWave() / 2) + 1;
+            }
 
-            //Debug.Log("Spawning at: " + chosenSpawnPoint.name);
+            int EnemyNumber = Random.Range(0, maxRange);
+            for (int i = 0; i < SpawnPoints.Length; i++)
+            {
+                IsSpawnDisabled[i] = SpawnPoints[i].GetComponent<EnemySpawn>().IsPlayerClose();
+                if (IsSpawnDisabled[i] == false)
+                {
+                    EnabledSpawnIndex.Add(i);
+                }
+            }
+            if (EnabledSpawnIndex.Count != 0)
+            {
+                int randomIndex = EnabledSpawnIndex[Random.Range(0, EnabledSpawnIndex.Count)];
+                GameObject chosenSpawnPoint = SpawnPoints[randomIndex];
 
-            Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+                Instantiate(enemyPrefabs[EnemyNumber], chosenSpawnPoint.transform.position, Quaternion.identity);
+            }
+            EnabledSpawnIndex.Clear();
         }
-        EnabledSpawnIndex.Clear();
+    }
+
+    public void SpawnBoss()
+    {
+        boss.SetActive(true);
     }
 }

@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : Health
 {
@@ -27,12 +29,7 @@ public class PlayerHealth : Health
     }
     protected override void Die()
     {
-        GameObject deathScreen = GameObject.Find("DeathScreen");
-        if (deathScreen != null)
-        {
-            deathScreen.SetActive(true);
-        }
-        //base.Die();
+        SceneManager.LoadScene("Lose");
     }
 
     public int GetHealth()
@@ -55,6 +52,12 @@ public class PlayerHealth : Health
             StartCoroutine(damageFlash.Damaged(spriteRenderer, 3));
             base.TakeDamage(damage);
         }
+    }
+
+    public void Heal()
+    {
+        currentHP = maxHP;
+        UpdateHealthBar();
     }
 
     private IEnumerator Invincibility()

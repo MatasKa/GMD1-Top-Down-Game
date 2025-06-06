@@ -9,23 +9,58 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public PlayerInput input;
+    public CharacterChoice charChoice;
+    public GameObject CharSelectScreen;
+    private bool onCharSelect = false;
 
     private void Awake()
     {
         input = new PlayerInput();
         input.Enable();
     }
-
-    public void OnA()
+    public void OnA() // Warden
     {
-        Debug.Log("Jump (A) was pressed!");
-        SceneManager.LoadScene("Arena");
+        if (onCharSelect)
+        {
+            charChoice.character = 0;
+            SceneManager.LoadScene("Arena");
+        }
+        else
+        {
+            CharSelectScreen.SetActive(true);
+            onCharSelect = true;
+        }
     }
+    public void OnX() // Wolf
+    {
+        if (onCharSelect)
+        {
+            charChoice.character = 1;
+            SceneManager.LoadScene("Arena");
+        }
+    }
+    public void OnY() // Duelist
+    {
+        if (onCharSelect)
+        {
+            charChoice.character = 2;
+            SceneManager.LoadScene("Arena");
+        }
+    }
+
     public void OnB()
     {
-        Debug.Log("B was pressed!");
-        Application.Quit();
+        if (onCharSelect)
+        {
+
+            CharSelectScreen.SetActive(false);
+            onCharSelect = false;
+
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }
