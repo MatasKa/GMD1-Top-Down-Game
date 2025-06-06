@@ -10,3 +10,7 @@ Blog Posts:
 [Blog #3: First Milestone](Blog%20posts/Blog%20%233%20First%20Milestone.md)
 
 [Blog #4: Second Milestone](Blog%20posts/Blog%20%234%20Second%20Milestone.md)
+
+[Blog #5: Third Milestone](Blog%20posts/Blog%20%234%20Third%20Milestone.md)
+
+[Blog #6: The final product](Blog%20posts/Blog%20%234%20The%20final%20product.md)
