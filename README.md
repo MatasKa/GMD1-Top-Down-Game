@@ -22,10 +22,16 @@ https://www.youtube.com/watch?v=rRmMAjzgTNk
 # Assets used
 
 ***Potions:*** https://tuamigoeldelosrecursos.itch.io/potionspociones
+
 ***Weapons:*** https://timberwolfgames.itch.io/freepixelsweapons
+
 ***Tile set:*** https://gfragger.itch.io/magic-market
+
 ***Characters:*** https://elvgames.itch.io/free-retro-game-world-sprites
+
 ***Font:*** https://www.1001fonts.com/dpcomic-font.html
+
 ***Sound effects generated at:*** https://sfxr.me
+
 
 ***If you see an asset in the game that is not mentioned here, I probably made it myself***
