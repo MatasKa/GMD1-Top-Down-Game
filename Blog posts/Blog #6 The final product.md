@@ -37,3 +37,5 @@ choice, as I would have rather have the game too easy than too hard.
 apart from a few other smaller changes, I am proud of the result (except maybe the third's milestone execution), and may continue the project for fun later on.
 
 If you will try it, good luck, and most importantly, have fun :)
+
+![WeaponSpin](../Images%20and%20GIFs/WeaponSpin.gif)
