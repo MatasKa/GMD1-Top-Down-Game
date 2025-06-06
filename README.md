@@ -1,5 +1,5 @@
-# GMD1 RogueBit
- a game for the GMD1 course
+# GMD1 - RogueBit
+ a game for the GMD1 course, at VIA University College.
 
 # Video:
 https://www.youtube.com/watch?v=rRmMAjzgTNk
