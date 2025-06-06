@@ -30,7 +30,6 @@ public class Shop : MonoBehaviour
     private int rerollPrice = 6;
     private int WeaponNumber;
     private int PotionNumber;
-    private bool shopedThisPause = false;
     private bool potionBought = false;
     void Start()
     {
@@ -40,41 +39,38 @@ public class Shop : MonoBehaviour
         currentPlayerWeapon = GameObject.Find("Weapon");
         rerollPriceText.text = rerollPrice.ToString();
 
-        RandomizeShop(true);
+        RandomizeShop();
     }
 
-    public void setShopedThisPause(bool s)
+    public void RandomizeShop()
     {
-        shopedThisPause = s;
+        Destroy(CurrentWeapon);
+        Destroy(CurrentPotion);
+
+        WeaponNumber = UnityEngine.Random.Range(0, 9);
+        GameObject newWeapon = Instantiate(weaponShopPrefabs[WeaponNumber], shopCanvas.transform);
+        weaponPriceText.text = weaponPrices[WeaponNumber].ToString();
+        CurrentWeapon = newWeapon;
+
+        if (weaponPrices[WeaponNumber] == 30) { CurrentWeaponReq = 6; }
+        else if (weaponPrices[WeaponNumber] == 75) { CurrentWeaponReq = 8; }
+        else { CurrentWeaponReq = 10; }
+
+        if (WeaponNumber < 3) { CurrentWeaponClass = 0; } //ward
+        else if (WeaponNumber > 5) { CurrentWeaponClass = 2; } //duel
+        else { CurrentWeaponClass = 1; }  //wolf
+
+        PotionNumber = UnityEngine.Random.Range(0, 4);
+        GameObject newPotion = Instantiate(potionPrefabs[PotionNumber], shopCanvas.transform);
+        CurrentPotion = newPotion;
+        potionBought = false;
+    }
+
+    public void ResetShop()
+    {
+        RandomizeShop();
         rerollPrice = 6;
         rerollPriceText.text = rerollPrice.ToString();
-    }
-
-    public void RandomizeShop(bool reroll)
-    {
-        if (reroll || shopedThisPause == false)
-        {
-            Destroy(CurrentWeapon);
-            Destroy(CurrentPotion);
-
-            WeaponNumber = UnityEngine.Random.Range(0, 9);
-            GameObject newWeapon = Instantiate(weaponShopPrefabs[WeaponNumber], shopCanvas.transform);
-            weaponPriceText.text = weaponPrices[WeaponNumber].ToString();
-            CurrentWeapon = newWeapon;
-
-            if (weaponPrices[WeaponNumber] == 30) { CurrentWeaponReq = 6; }
-            else if (weaponPrices[WeaponNumber] == 75) { CurrentWeaponReq = 8; }
-            else { CurrentWeaponReq = 10; }
-
-            if (WeaponNumber < 3) { CurrentWeaponClass = 0; } //ward
-            else if (WeaponNumber > 5) { CurrentWeaponClass = 2; } //duel
-            else { CurrentWeaponClass = 1; }  //wolf
-
-            PotionNumber = UnityEngine.Random.Range(0, 4);
-            GameObject newPotion = Instantiate(potionPrefabs[PotionNumber], shopCanvas.transform);
-            CurrentPotion = newPotion;
-            potionBought = false;
-        }
     }
 
     public void LoadPlayerStats()
@@ -93,7 +89,7 @@ public class Shop : MonoBehaviour
             goldManager.RemoveGold(rerollPrice);
             rerollPrice += 2;
             rerollPriceText.text = rerollPrice.ToString();
-            RandomizeShop(true);
+            RandomizeShop();
         }
     }
 

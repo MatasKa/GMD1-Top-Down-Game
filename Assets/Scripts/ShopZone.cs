@@ -54,6 +54,7 @@ public class ShopZone : MonoBehaviour
         if (shopScreen.activeSelf == false)
         {
             SetTimeOut(false);
+            shop.ResetShop();
         }
     }
 

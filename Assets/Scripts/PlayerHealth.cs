@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : Health
 {
@@ -27,12 +29,7 @@ public class PlayerHealth : Health
     }
     protected override void Die()
     {
-        GameObject deathScreen = GameObject.Find("DeathScreen");
-        if (deathScreen != null)
-        {
-            deathScreen.SetActive(true);
-        }
-        //base.Die();
+        SceneManager.LoadScene("Lose");
     }
 
     public int GetHealth()

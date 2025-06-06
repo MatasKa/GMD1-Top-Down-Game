@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 public class EnemySpawnManager : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
+    public GameObject boss;
     public WaveManager waveManager;
     public float spawnInterval = 5f;
     private GameObject[] SpawnPoints;
@@ -54,5 +55,10 @@ public class EnemySpawnManager : MonoBehaviour
             }
             EnabledSpawnIndex.Clear();
         }
+    }
+
+    public void SpawnBoss()
+    {
+        boss.SetActive(true);
     }
 }

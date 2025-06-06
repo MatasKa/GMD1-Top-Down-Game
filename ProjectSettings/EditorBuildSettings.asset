@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arena.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: ba5cf34cb4245ac48ab87f841603d1f8
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8f55829af6cbe1041b0f2033d3ae81bf
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: cd97646d2a5a7ba49a2c134f9ff55b4f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

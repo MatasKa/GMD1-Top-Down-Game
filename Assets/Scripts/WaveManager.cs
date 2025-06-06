@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour
@@ -56,7 +57,10 @@ public class WaveManager : MonoBehaviour
         }
         else
         {
-            //spawn boss
+            enemySpawnManager.spawnInterval = 10f;
+            shop.SetTimeOut(false);
+            enemySpawnManager.enabled = true;
+            enemySpawnManager.SpawnBoss();
         }
     }
 
